@@ -1,0 +1,14 @@
+import java.util.*;
+ public class Substitute {
+
+	public int getValue(String key, String code) {
+		int a,i = 0;
+                       int v = 0;
+        for(i =0; i<code.length();i++) {
+             a = key.indexOf(code.charAt(i));
+            if(a>=0) {
+                  v*=10;
+                  v+= (a+1)%10 ;
+                }	
+            }
+		return v;
